@@ -1,4 +1,4 @@
-#!/usr/local/lib/python3.7
+#!/usr/bin/env python3.7
 
 import logging
 import asyncio

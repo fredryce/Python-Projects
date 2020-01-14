@@ -1,3 +1,8 @@
 import requests
-res = requests.get("https://xin-6inw.localhost.run")
-print(res.content)
+
+
+data = "wtf is going on"
+
+with requests.Session() as sess:
+	r = sess.post("https://xin-6inw.localhost.run", data)
+	print(r.content)

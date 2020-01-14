@@ -7,8 +7,7 @@ import socket
 async def handle_client(reader, writer):
 	request = None
 	while request != 'quit':
-		request = (await reader.read(255)).decode('utf8')
-		print("got request for ", request)
+		request = (await reader.read(255)).decode('utf8')\
 
 		try:
 			response = str(eval(request)) + '\n'
